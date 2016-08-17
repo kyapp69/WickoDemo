@@ -42,6 +42,21 @@ namespace WickoDemo.Shared
 
         public Symbol Symbol { get; }
 
+        private Wicko GetNewWicko(double openRate, 
+            double highRate, double lowRate, double closeRate)
+        {
+            return new Wicko()
+            {
+                Symbol = Symbol,
+                OpenOn = openOn,
+                CloseOn = closeOn,
+                OpenRate = openRate,
+                HighRate = highRate,
+                LowRate = lowRate,
+                CloseRate = closeRate
+            };
+        }
+
         private void Rising()
         {
             double limit;
@@ -49,16 +64,8 @@ namespace WickoDemo.Shared
             while (closeRate > (limit = (openRate + wickoSize)
                 .ToRoundedRate(Symbol)))
             {
-                var wicko = new Wicko()
-                {
-                    Symbol = Symbol,
-                    OpenOn = openOn,
-                    CloseOn = closeOn,
-                    OpenRate = openRate,
-                    HighRate = limit,
-                    LowRate = lowRate,
-                    CloseRate = limit
-                };
+                var wicko = GetNewWicko(
+                    openRate, limit, lowRate, limit);
 
                 lastWicko = wicko;
 
@@ -77,16 +84,8 @@ namespace WickoDemo.Shared
             while (closeRate < (limit = (openRate - wickoSize)
                 .ToRoundedRate(Symbol)))
             {
-                var wicko = new Wicko()
-                {
-                    Symbol = Symbol,
-                    OpenOn = openOn,
-                    CloseOn = closeOn,
-                    OpenRate = openRate,
-                    HighRate = highRate,
-                    LowRate = limit,
-                    CloseRate = limit
-                };
+                var wicko = GetNewWicko(
+                    openRate, highRate, limit, limit);
 
                 lastWicko = wicko;
 
@@ -102,16 +101,8 @@ namespace WickoDemo.Shared
         {
             get
             {
-                return new Wicko()
-                {
-                    Symbol = Symbol,
-                    OpenOn = openOn,
-                    CloseOn = closeOn,
-                    OpenRate = openRate,
-                    HighRate = highRate,
-                    LowRate = lowRate,
-                    CloseRate = closeRate
-                };
+                return GetNewWicko(
+                    openRate, highRate, lowRate, closeRate);
             }
         }
 
@@ -157,16 +148,8 @@ namespace WickoDemo.Shared
 
                     if (closeRate > limit)
                     {
-                        var wicko = new Wicko()
-                        {
-                            Symbol = Symbol,
-                            OpenOn = openOn,
-                            CloseOn = closeOn,
-                            OpenRate = lastWicko.OpenRate,
-                            HighRate = limit,
-                            LowRate = lowRate,
-                            CloseRate = limit
-                        };
+                        var wicko = GetNewWicko(
+                            lastWicko.OpenRate, limit, lowRate, limit);
 
                         lastWicko = wicko;
 
@@ -194,16 +177,8 @@ namespace WickoDemo.Shared
 
                     if (closeRate < limit)
                     {
-                        var wicko = new Wicko()
-                        {
-                            Symbol = Symbol,
-                            OpenOn = openOn,
-                            CloseOn = closeOn,
-                            OpenRate = lastWicko.OpenRate,
-                            HighRate = highRate,
-                            LowRate = limit,
-                            CloseRate = limit
-                        };
+                        var wicko = GetNewWicko(
+                            lastWicko.OpenRate, highRate, limit, limit);
 
                         lastWicko = wicko;
 
