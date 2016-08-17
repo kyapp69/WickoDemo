@@ -1,0 +1,11 @@
+<!--
+// Copyright (C) SquidEyes, LLC. - All Rights Reserved
+// Unauthorized copying of this file, via any medium is strictly prohibited
+// Proprietary and Confidential
+// Written by Louis S. Berman <louis@squideyes.com>, 8/17/2016
+-->
+<Application x:Class="WickoDemo.Viewer.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+</Application>

@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WickoDemo.Trading", "Source\WickoDemo.Trading\WickoDemo.Trading.csproj", "{B6D51FE6-4D98-42E9-B505-5B369A2C35AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WickoDemo.Viewer", "Source\WickoDemo.Viewer\WickoDemo.Viewer.csproj", "{984E36A0-D1F4-4ECC-9415-0A3BE0EBF9D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WickoDemo.Trading.Tests", "Source\WickoDemo.Trading.Tests\WickoDemo.Trading.Tests.csproj", "{ED2D5E68-E706-409F-833F-F7F61F3CE777}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8474D347-0B25-4F91-87F1-BAA90D0B56CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{12C3E1C1-B073-4ED4-A62B-51597FFD38D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{8C08ECD4-E92E-40A5-AF50-E06B00B42977}"
+	ProjectSection(SolutionItems) = preProject
+		App.licenseheader = App.licenseheader
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{6DDBF3F3-3A49-4FB3-A6A0-7DEA3C0FF57A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6D51FE6-4D98-42E9-B505-5B369A2C35AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6D51FE6-4D98-42E9-B505-5B369A2C35AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6D51FE6-4D98-42E9-B505-5B369A2C35AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6D51FE6-4D98-42E9-B505-5B369A2C35AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{984E36A0-D1F4-4ECC-9415-0A3BE0EBF9D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{984E36A0-D1F4-4ECC-9415-0A3BE0EBF9D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{984E36A0-D1F4-4ECC-9415-0A3BE0EBF9D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{984E36A0-D1F4-4ECC-9415-0A3BE0EBF9D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED2D5E68-E706-409F-833F-F7F61F3CE777}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED2D5E68-E706-409F-833F-F7F61F3CE777}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED2D5E68-E706-409F-833F-F7F61F3CE777}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED2D5E68-E706-409F-833F-F7F61F3CE777}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B6D51FE6-4D98-42E9-B505-5B369A2C35AB} = {6DDBF3F3-3A49-4FB3-A6A0-7DEA3C0FF57A}
+		{984E36A0-D1F4-4ECC-9415-0A3BE0EBF9D6} = {6DDBF3F3-3A49-4FB3-A6A0-7DEA3C0FF57A}
+		{ED2D5E68-E706-409F-833F-F7F61F3CE777} = {8474D347-0B25-4F91-87F1-BAA90D0B56CE}
+		{8474D347-0B25-4F91-87F1-BAA90D0B56CE} = {12C3E1C1-B073-4ED4-A62B-51597FFD38D9}
+		{6DDBF3F3-3A49-4FB3-A6A0-7DEA3C0FF57A} = {12C3E1C1-B073-4ED4-A62B-51597FFD38D9}
+	EndGlobalSection
+EndGlobal
