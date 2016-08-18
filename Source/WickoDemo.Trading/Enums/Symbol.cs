@@ -10,9 +10,8 @@ namespace WickoDemo.Shared
         AUDCAD = 1,
         EURUSD = 2,
         GBPUSD = 3,
-        NZDUSD = 4,
-        USDCAD = 5,
-        USDCHF = 6,
-        USDJPY = 7
+        USDCAD = 4,
+        USDCHF = 5,
+        USDJPY = 6
     }
 }
