@@ -18,20 +18,5 @@ namespace WickoDemo.Shared
 
             return (value / factor).ToRoundedRate(symbol);
         }
-
-        //public static double ToTickSize(this Symbol symbol) =>
-        //    symbol == Symbol.USDJPY ? 0.001 : 0.00001;
-
-        //public static string ToDateString(this DateTime value) =>
-        //    value.ToString("MM/dd/yyyy");
-
-        //public static string ToTimeString(this DateTime value) =>
-        //    value.ToString("HH:mm:ss.fff");
-
-        //public static string ToDateTimeString(this DateTime value) =>
-        //    value.ToString("MM/dd/yyyy HH:mm:ss.fff");
-
-        //public static string ToRateString(this double value, Symbol symbol) =>
-        //    value.ToString((symbol == Symbol.USDJPY) ? "N3" : "N5");
     }
 }
